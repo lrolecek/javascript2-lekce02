@@ -23,13 +23,9 @@ Pro definování třídy používáme následující syntaxi:
 ```javascript
 class Osoba {
 
-  // vlastnosti
-  jmeno;
-  prijmeni;
-  vek;
-
   // konstruktor
   constructor(jmeno, prijmeni, vek) {
+    // vlastnosti obvykle nastavujeme v konstruktoru
     this.jmeno = jmeno;
     this.prijmeni = prijmeni;
     this.vek = vek;
@@ -39,12 +35,6 @@ class Osoba {
   pozdrav() {
     console.log(`Ahoj, já jsem ${this.jmeno}.`);
   }
-
-  // getter
-  get celeJmeno() {
-    return `${this.jmeno} ${this.prijmeni}`;
-  }
-
 }
 ```
 
